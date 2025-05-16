@@ -330,6 +330,8 @@ console.log(shoppingList[1]);
 console.log(shoppingList);
 */
 
+/*
+
 favoriteFruits = ["grapefruit", "orange", "lemon"];
 favoriteFruits.push("tangerine");
 let lengthofFavoriteFruits = favoriteFruits.push("lime")
@@ -380,3 +382,42 @@ let ages = [18, 72, 33, 56, 40];
   console.log(ages);
   ages.reverse();
   console.log(ages);
+  */
+  
+  /*
+  shoppingList = ["Milk", "Bread", "Apples"];
+    console.log(shoppingList);
+  shoppingList.push("Bananas");
+   let lengthOfShoppingList = shoppingList.push("Eggs");
+   console.log(shoppingList);
+  shoppingList.splice(1, 1)
+    console.log(shoppingList);
+  shoppingList.sort();
+    console.log(shoppingList);
+   let findIndex = shoppingList.indexOf("eggs");
+    console.log(findIndex);
+
+ shoppingList.splice(2, 0, "Carrots", "Lettuce");
+  console.log(shoppingList);
+  lengthOfShoppingList = shoppingList.push("Juice", "Pop")
+  console.log(shoppingList);
+  */
+ 
+/*
+let someValues1 = [1, 2, 3];
+let someValues2 = [4, 5, 6];
+let someValues3 = [7, 8, 9];
+
+let arrOfArrays = [someValues1, someValues2, someValues3]
+let arrOfArrays2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.log(arrOfArrays);
+console.log(arrOfArrays2);
+
+let value1 = arrOfArrays[0][1];
+
+let someValues4 = [1, 2, 3];
+let arrOfArrays4 = [[1, 2, 3], [1, 2, 3], [1, 2, 3]];
+
+let value2 = arrOfArrays4 [1][1];
+  console.log(value2);
+*/
