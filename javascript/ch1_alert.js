@@ -338,3 +338,45 @@ console.log(favoriteFruits);
 let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
 arrOfShapes.splice(2, 0, "square", "trapezoid");
 console.log(arrOfShapes);
+
+arrOfShapes.splice(2, 12, "square", "trapezoid");
+console.log(arrOfShapes);
+
+let arr5 = [1, 2, 3];
+let arr6 = [4, 5, 6];
+let arr7 = arr5.concat(arr6);
+console.log(arr7);
+
+let arr8 = arr7.concat(7, 8, 9);
+console.log(arr8);
+
+arr8.pop();
+arr8.shift();
+arr8.splice(1, 3);
+delete arr8[0];
+
+arr8 = [2, 6, 7, 8];
+let findValue = arr8.find(function(e) {
+  return e === 6});
+let findValue2 = arr8.find(e => e === 10);
+  console.log(findValue, findValue2);
+
+  arr8 = [2, 6, 7, 8];
+    let findIndex = arr8.indexOf(6);
+    let findIndex2 = arr8.indexOf(10);
+    console.log(findIndex, findIndex2);
+
+let animals = ["dog", "horse", "cat", "platypus", "dog"];
+let lastDog = animals.lastIndexOf("dog");
+
+let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
+  names.sort();
+  console.log(names);
+  names.reverse();
+  console.log(names);
+
+let ages = [18, 72, 33, 56, 40];
+  ages.sort();
+  console.log(ages);
+  ages.reverse();
+  console.log(ages);
