@@ -402,7 +402,7 @@ let ages = [18, 72, 33, 56, 40];
   lengthOfShoppingList = shoppingList.push("Juice", "Pop")
   console.log(shoppingList);
   */
- 
+
 /*
 let someValues1 = [1, 2, 3];
 let someValues2 = [4, 5, 6];
@@ -421,3 +421,126 @@ let arrOfArrays4 = [[1, 2, 3], [1, 2, 3], [1, 2, 3]];
 let value2 = arrOfArrays4 [1][1];
   console.log(value2);
 */
+
+let arr = [0, 1, 2]
+  console.log(typeof arr);
+
+let dog = {
+  dogName: "Javascript",
+  weight: 2.4,
+  color: "brown",
+  breed: "chihuahua",
+  age: 3,
+  burglarBiter: true
+};
+
+let dogColor1 = dog["color"];
+let dogColor2 = dog.color;
+
+dog["color"] = "blue";
+dog.weight = 2.3;
+
+console.log(dog);
+
+let variable = "age";
+console.log(dog[variable]);
+
+variable = "breed";
+console.log(dog[variable]);
+
+dog[variable] = "dachshund"
+console.log(dog["breed"]);
+
+let myCar = {
+  Maker: "Suzuki",
+  Model: "Suzuki Swift",
+  Color: "Metallic Gray",
+  Year: 2021,
+  Engine: 1.2,
+  headTurner: true
+};
+
+myCar["Color"] = "white";
+console.log(myCar["Color"]);
+
+myCar["Price"] = 500000;
+myCar["For sale"] = "This car is for sale"
+console.log(myCar["Price"]);
+console.log(myCar["For sale"]);
+console.log(myCar["Maker"]);
+console.log(myCar["Model"]);
+console.log(myCar);
+
+let company = {
+  companyName: "Healthy Candy",
+  activity: "Food manufacturing",
+  address: {
+    street: "2nd street",
+    number: "123",
+    zipcode: "33116",
+    city: "Miami",
+    state: "Florida"
+  },
+  yearOfEstablisment: 2021
+};
+
+company.address.zipcode = "33117";
+company["address"]["number"] = "100";
+
+company = {
+  companyName: "Healthy Candy",
+  activities: ["food manufacturing", "improving kids' health", 
+    "manufacturing toys"],
+  address: {
+    street: "2nd street",
+    number: "123",
+    zipcode: "33116",
+    city: "Miami",
+    state: "Florida"
+  },
+  yearOfEstablisment: 2021
+};
+
+let activity = company.activities[1];
+
+let addresses = [{
+  street: "2nd street",
+  number: "123",
+  zipcode: "33116",
+  city: "Miami",
+  state: "Florida"
+},
+{
+  street: "1st West avenue",
+  number: "5",
+  zipcode: "75001",
+  city: "Addison",
+  state: "Texas"
+}];
+
+// let streetName = addresses[0].street;
+
+company = {
+  companyName: "Healthy Candy",
+  activities: ["food manufacturing", "improving kids' health",
+  "manufacturing toys"],
+  addresses: [{
+  street: "2nd street",
+  number: "123",
+  zipcode: "33116",
+  city: "Miami",
+  state: "Florida"
+},
+{
+  street: "1st West avenue",
+  number: "5",
+  zipcode: "75001",
+  city: "Addison",
+  state: "Texas"
+}],
+  yearOfEstablisment: 2021
+};
+
+let streetName = addresses[0].street;
+
+console.log(company);
