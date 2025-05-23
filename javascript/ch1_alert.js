@@ -422,6 +422,7 @@ let value2 = arrOfArrays4 [1][1];
   console.log(value2);
 */
 
+/*
 let arr = [0, 1, 2]
   console.log(typeof arr);
 
@@ -450,7 +451,9 @@ console.log(dog[variable]);
 
 dog[variable] = "dachshund"
 console.log(dog["breed"]);
+*/
 
+/*
 let myCar = {
   Maker: "Suzuki",
   Model: "Suzuki Swift",
@@ -470,7 +473,9 @@ console.log(myCar["For sale"]);
 console.log(myCar["Maker"]);
 console.log(myCar["Model"]);
 console.log(myCar);
+*/
 
+/*
 let company = {
   companyName: "Healthy Candy",
   activity: "Food manufacturing",
@@ -544,3 +549,165 @@ company = {
 let streetName = addresses[0].street;
 
 console.log(company);
+*/
+
+/*
+let people = {
+  friends: []
+};
+
+let friend1 = {
+  name: "Arvin",
+  lastName: "Ilustrisimo",
+  idValue: "Loyal"
+};
+
+let friend2 = {
+  name: "Kenneth",
+  lastName: "Jalao",
+  idValue: "Loyal"
+};
+
+let friend3 = {
+  name: "Kyle",
+  lastName: "Galvez",
+  idValue: "Loyal"
+};
+
+arrOfFriends = [friend1, friend2, friend3];
+console.log(arrOfFriends);
+
+arrOfFriends.push(
+ {
+    name: "Jay Ar",
+    lastName: "Unknown",
+    idValue: "Loyal"
+  },
+  {
+    name: "Jerome",
+    lastName: "Tuclaud",
+    idValue: "Loyal"
+  }
+);
+
+people.friends = arrOfFriends;
+
+console.log(arrOfFriends);
+console.log(people);
+*/
+
+/*
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
+  {test: 'one', score: 55}, ['one','two']];
+  console.log(theList);
+  theList.shift();
+  theList.pop();
+  console.log(theList);
+  theList.splice(0, 0, "FIRST");
+  console.log(theList);
+  theList.splice(4, 5, "Hello World");
+  console.log(theList);
+  theList.splice(2, 2, "MIDDLE");
+  console.log(theList);
+  theList.push("LAST");
+  console.log(theList);
+*/
+
+/*
+let storeItems = ["Shampoo", "Soap", "Conditioner"];
+ let storeItem1 = {
+  name: "Shampoo",
+  brand: "Dove",
+  cost: "$5"
+ };
+
+ let storeItem2 = {
+  name: "Soap",
+  brand: "Safeguard",
+  cost: "$2"
+ };
+
+ let storeItem3 = {
+  name: "Conditioner",
+  brand: "Dove",
+  cost: "$4"
+ };
+
+ console.log(storeItem1, storeItem2, storeItem3);
+
+ storeItems = [storeItem1, storeItem2, storeItem3];
+
+ console.log(storeItems);
+
+ let item3 = storeItems[2];
+
+ console.log(item3);
+
+ storeItem1["brand"] = "Clear";
+
+ console.log(storeItem1);
+*/
+
+/*
+let rain = true;
+  if(rain){
+    console.log("** Taking my umbrella when I need to go outside **");
+  } else {
+    console.log("** I can leave my umbrella at home **")
+  };
+
+ let age = (20); 
+  if(age < 18) {
+  console.log("We're Sorry, but you can't get in under 18");
+  } else {
+    console.log("welcome!");
+  };
+*/
+
+const gamingAge = (21);
+
+  if(gamingAge < 21) {
+    console.log("You're not allowed to play.");
+  } else {
+    console.log("Have fun playing!")
+  } if (gamingAge != 21) {
+    console.log("You're not allowed to play.");
+  } else {
+    console.log("Have fun playing!")
+  }
+/*
+let age = 10;
+let cost = 0;
+let message;
+  if (age < 3){
+    cost = 0;
+    message = "Access is free under three";
+  } else if (age >= 3 && age < 12) {
+    cost = 5;
+    message = "With the child discount, the fee is $5";
+  } else if (age >= 12 && age < 65) {
+    cost = 10;
+    message = "A regular ticket costs $10";
+  } else {
+    cost =7;
+    message = "A ticket is $7";
+  }
+  console.log(message);
+  console.log("Your total cost "+cost);
+*/
+
+let age = Number(prompt("Enter your age"));
+  if (isNaN(age)) {
+    console.log("Drunk already? please enter a valid number");
+  }
+  if (age >= 21) {
+    console.log("You're allowed to enter, and get drunk!");
+  } else if (age >= 19) {
+    console.log("Have fun without alcohol! hahahah!");
+  } else if (age < 19) {
+    console.log("Go home and drink your milk kid!");
+  }
+
+let access = age < 18? "denied" : "allowed";
+  age < 18 ? console.log("denied") : console.log("allowed");
+
