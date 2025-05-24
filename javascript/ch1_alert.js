@@ -7,6 +7,8 @@ console.log(Math.random() * 100);
 console.log(Math.floor(Math.random() * 100));
 */
 
+// const { use } = require("react");
+
 /*
 This is a string using backticks 
 
@@ -664,6 +666,7 @@ let rain = true;
   };
 */
 
+/*
 const gamingAge = (21);
 
   if(gamingAge < 21) {
@@ -675,6 +678,8 @@ const gamingAge = (21);
   } else {
     console.log("Have fun playing!")
   }
+*/
+
 /*
 let age = 10;
 let cost = 0;
@@ -696,6 +701,7 @@ let message;
   console.log("Your total cost "+cost);
 */
 
+/*
 let age = Number(prompt("Enter your age"));
   if (isNaN(age)) {
     console.log("Drunk already? please enter a valid number");
@@ -710,4 +716,184 @@ let age = Number(prompt("Enter your age"));
 
 let access = age < 18? "denied" : "allowed";
   age < 18 ? console.log("denied") : console.log("allowed");
+*/
 
+/*
+let driversLicense = true;
+
+let validId = driversLicense ? "allowed access" : "denied access";
+console.log(validId);
+*/
+
+/*
+let driversLicense = true;
+prompt("Enter you ID");
+
+let access = driversLicense ? "You may enter" : "Provide a valid ID";
+console.log(access);
+*/
+
+/*
+let validId = ["Driver's license", "Passport", "National id","Seaman's book"];
+  let id = prompt("Enter your ID").toLowerCase().replace(/'/g, "");
+  let normalizedIds = validId.map(item => item.toLowerCase().replace(/'/g, ""));
+  let access = normalizedIds.includes(id) ? "You may enter" : "Provide a valid ID";
+  console.log(access);
+*/
+
+/*
+let activity = "Breakfast";
+
+if(activity === "Get up") {
+  console.log("It is 6:30AM");
+} else if(activity === "Breakfast") {
+  console.log("It is 7:00AM");
+} else if(activity === "Drive to work") {
+  console.log("It is 8:00AM");
+} else if(activity === "Lunch") {
+  console.log("It is 12:00PM");
+} else if(activity === "Drive home") {
+  console.log("It is 5:00PM");
+} else if(activity === "Dinner") {
+  console.log("It is 7:00PM");
+}
+*/
+
+let activity = "Get up";
+switch(activity) {
+  case "Get up":
+    console.log("It is 6:30AM");
+    break;
+  case "Breakfast":
+    console.log("It is 7:00Am");
+    break;
+  case "Drive to work":
+    console.log("It is 8:00AM");
+    break;
+  case "Lunch":
+    console.log("It is 12:00PM");
+    break;
+  case "Drive home":
+    console.log("It is 5:00PM");
+    break;
+  case "Dinner":
+    console.log("It is 6:30PM");
+    break;
+  default:
+    console.log("I cannot determin the current time")
+    break;
+}
+
+/*
+let randomNumber = Math.floor(Math.random() * 6);
+let userQuestions = prompt("Enter your questions");
+let answer = "";
+
+switch(randomNumber) {
+  case 0:
+    answer = "Yeah, You're doing great!";
+    break;
+
+  case 1:
+   answer ="Don't worry about a thing";
+   break;
+
+  case 2: 
+    answer = "Tomorrow you'll be better";
+    break;
+  
+  case 3: 
+    answer = "Problems are created to teach us a lesson";
+    break;
+
+  case 4: 
+    answer = "Believe in yourself";
+    break;
+
+  default:
+    answer = "You are the best!";
+    break;
+}
+
+console.log("You asked: " + userQuestions);
+console.log("Magic 8 Ball says: " + answer);
+*/
+
+let grade = "";
+
+switch(grade) {
+  case "F":
+  case "D":
+    console.log("You have failed");
+    break;
+  case "C":
+  case "B":
+    console.log("You have passed");
+    break;
+  case "A":
+    console.log("excellent work genius!")
+    break;
+  default:
+    console.log("You have not entered a valid grade");
+}
+
+let userInput = prompt ("Enter a number between (0 to 10)");
+let inputNumber = parseInt(userInput);
+let myPrize = "";
+let notValid = "Not a valid number";
+
+if (isNaN(inputNumber) || inputNumber < 0 || inputNumber > 10) {
+  console.log(`${userInput} is not a valid number`);
+} else {
+
+switch(inputNumber) {
+  case 0:
+    myPrize = "Try again";
+  break;
+
+  case 1:
+    myPrize = "You won two ballpen";
+    break;
+  
+  case 2:
+    myPrize = "You won a rim of paper";
+    break;
+
+  case 3:
+    myPrize = "You won a sign pen";
+    break;
+  
+  case 4:
+    myPrize = "You won a set of colored pen";
+    break;
+  
+  case 5:
+    myPrize = "You won a set of colored pencil";
+    break;
+
+  case 6:
+    myPrize = "You won a set of colored crayon";
+    break;
+
+  case 7:
+    myPrize = "You won a set of colored chalk";
+    break;
+
+  case 8:
+    myPrize = "You won a set of colored marker";
+    break;
+  
+  case 9:
+    myPrize = "You won a set of colored highlighter";
+    break;
+
+  case 10:
+    myPrize = "You won a set of colored paint";
+    break;
+  
+  default:
+    notValid = "Not a valid number";
+    break;
+}
+ console.log(`🎉 Congratulations! You picked ${inputNumber}!: ${myPrize}`);
+}
