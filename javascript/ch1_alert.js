@@ -9,6 +9,10 @@ console.log(Math.floor(Math.random() * 100));
 
 // const { use } = require("react");
 
+// const { use } = require("react");
+
+// const { use } = require("react");
+
 /*
 This is a string using backticks 
 
@@ -759,6 +763,7 @@ if(activity === "Get up") {
 }
 */
 
+/*
 let activity = "Get up";
 switch(activity) {
   case "Get up":
@@ -783,6 +788,7 @@ switch(activity) {
     console.log("I cannot determin the current time")
     break;
 }
+*/
 
 /*
 let randomNumber = Math.floor(Math.random() * 6);
@@ -819,6 +825,7 @@ console.log("You asked: " + userQuestions);
 console.log("Magic 8 Ball says: " + answer);
 */
 
+/*
 let grade = "";
 
 switch(grade) {
@@ -836,14 +843,16 @@ switch(grade) {
   default:
     console.log("You have not entered a valid grade");
 }
+*/
 
+/*
 let userInput = prompt ("Enter a number between (0 to 10)");
 let inputNumber = parseInt(userInput);
 let myPrize = "";
-let notValid = "Not a valid number";
+let notValid = "not a valid number";
 
 if (isNaN(inputNumber) || inputNumber < 0 || inputNumber > 10) {
-  console.log(`${userInput} is not a valid number`);
+  console.log(`${userInput}: Is ${notValid}`);
 } else {
 
 switch(inputNumber) {
@@ -897,3 +906,185 @@ switch(inputNumber) {
 }
  console.log(`🎉 Congratulations! You picked ${inputNumber}!: ${myPrize}`);
 }
+*/
+
+/*
+let userInput = prompt("Enter a number");
+let number = 5;
+let message = "";
+let inputNumber = Number(userInput);
+if (isNaN(inputNumber)) {
+    console.log("Please enter a valid number");
+  } else {
+
+  switch(inputNumber) {
+    case 0:
+      message = "0 is less than 5";
+      break;
+    case 1:
+      message = "1 is less than 5";
+      break;
+    case 2:
+      message = "2 is less than 5";
+      break;
+    case 3:
+      message = "3 is less than 5";
+      break;
+    case 4:
+      message = "4 is less than 5";
+      break;
+    case 5:
+      message = "5 is equal to 5";
+      break;
+    case 6:
+      message = "6 is greater than 5";
+      break;
+    case 7:
+      message = "7 is greater than 5";
+      break;
+    case 8:
+      message = "8 is greater than 5";
+      break;
+    case 9:
+      message = "9 is greater than 5";
+      break;
+    case 10:
+      message = "10 is greater than 5";
+      break;
+    default:
+      if (inputNumber < number) {
+        message = inputNumber + " is less than 5";
+      } else if (inputNumber > number) {
+        message = inputNumber + " is greater than 5";
+      } else if (inputNumber === number) {
+        message = inputNumber + " is equal to 5"
+      }
+      break;
+  }
+  console.log(message);
+}
+*/
+
+/*
+let friend = ["arvin", "kenneth", "kyle", "jay ar", "jerome", "tope"];
+let myFriend = prompt("Enter your friend's name").toLowerCase();
+
+switch(myFriend) {
+  case "arvin":
+    console.log("Is a friend of mine");
+    break;
+  case "kenneth":
+    console.log("Is a friend of mine");
+    break;
+  case "kyle":
+    console.log("Is a friend of mine");
+    break;
+  case "jay ar":
+    console.log("Is a friend of mine");
+    break;
+  case "jerome":
+    console.log("Is a friend of mine");
+    break;
+  case "tope":
+    console.log("Is a friend of mine");
+    break;
+
+  default:
+    console.log("Is not a friend of mine");
+    break;
+}
+*/
+
+/*
+a short and clean way to check if a name is in the array of friends
+
+let friends = ["arvin", "kenneth", "kyle", "jay ar", "jerome", "tope"];
+let myFriend = prompt("Enter your friend's name").toLowerCase();
+
+if (friends.includes(myFriend)) {
+  console.log("Is a friend of mine");
+} else {
+  console.log("Is not a friend of mine");
+}
+*/
+
+/*
+let arr = ["Rock", "Paper", "Scissors"];
+let playerChoice = Math.floor(Math.random() * 3);
+let computerChoice = Math.floor(Math.random() * 3);
+
+console.log("Player choice:", arr[playerChoice]);
+console.log("Computer choice:", arr[computerChoice]);
+
+if (playerChoice === computerChoice) {
+  console.log("It's a tie!");
+} else if (
+  (playerChoice === 0 && computerChoice === 2) || // Rock beats Scissors
+  (playerChoice === 1 && computerChoice === 0) || // Paper beats Rock
+  (playerChoice === 2 && computerChoice === 1)  // Scissors beats Paper
+ ) {
+  console.log("Player wins!");
+} else {
+  console.log("Computer wins!");
+}
+*/
+
+/*
+const userName = ["Mike", "John", "Larry"];
+const userInput = "John";
+let htmlOutput = "";
+if (userName.indexOf(userInput) > -1) {
+  htmlOutput = "Welcome, that is a user";
+} else {
+  htmlOutput = "Denied, not a user";
+}
+console.log(htmlOutput + ": " + userInput);
+
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+
+let someArray = ["Tennis ball", "Football", "Basketball", "Baseball", "Volleyball"];
+let notFound = true;
+
+while (notFound && someArray.length > 0) {
+  if (someArray[0] === "Volleyball") {
+    console.log("Found the ball!");
+    notFound = false;
+  } else {
+    someArray.shift();
+  }
+}
+*/
+
+/*
+let nr1 = 0;
+let nr2 = 1;
+let temp;
+
+fibonacciArray = [];
+
+while (fibonacciArray.length , 25) {
+  fibonacciArray.push(nr1);
+  temp = nr1 + nr2;
+  nr1 = nr2;
+  nr2 = temp;
+}
+*/
+
+/*
+let maxNumber = 35;
+let randomNumbers = Math.floor(Math.random() * (maxNumber + 1));
+console.log("Random number is: " + randomNumbers);
+let userGuess = Number(prompt("Guess a number between 0 and " + maxNumber));
+
+while (userGuess !== randomNumbers) {
+  if (userGuess < randomNumbers) {
+    userGuess = Number(prompt("Your guess is too low. Try again:"));  
+  } else {
+    userGuess = Number(prompt("Your guess is too high. Try again:"));
+  } 
+}
+*/
