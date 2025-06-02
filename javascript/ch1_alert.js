@@ -1088,3 +1088,47 @@ while (userGuess !== randomNumbers) {
   } 
 }
 */
+
+/*
+let gasEmpty = true;
+  if (gasEmpty) {
+    console.log("Gas tank is thirsty, fill it up!");
+  } else {
+    console.log("Don't worry, just drive");
+  }
+
+let i = 0;
+  while (i < 10) {
+    console.log(i);
+    i++;
+  }
+  
+let nr1 = 0;
+let nr2 = 1;
+let temp;
+fibonacciArray = [];
+
+while (fibonacciArray.length < 25) {
+  fibonacciArray.push(nr1);
+  temp = nr1 + nr2;
+  nr1 = nr2;
+  nr2 = temp;
+}
+
+console.log(fibonacciArray);
+console.log(nr1, nr2, temp);
+
+let maxNumber = 30;
+let randomNumbers = Math.floor(Math.random() * (maxNumber + 1));
+  console.log("Random number is: " + randomNumbers);
+let userGuess = Number(prompt("Guess a number between 0 and " + maxNumber));
+while (userGuess !== randomNumbers) {
+  if (userGuess < randomNumbers) {
+    userGuess = Number(prompt("Your guess is too low. Try again"));
+  } else if (userGuess > randomNumbers) {
+    userGuess = Number(prompt("Your guess is too high. Try again"));
+  }
+}
+
+alert("You guessed it right");
+*/
