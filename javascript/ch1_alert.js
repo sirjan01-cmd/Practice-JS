@@ -1132,3 +1132,48 @@ while (userGuess !== randomNumbers) {
 
 alert("You guessed it right");
 */
+
+/*
+let number;
+do {
+  number = prompt("Please enter a number between 0 and 100: ");
+} while (!(number >= 0 && number < 100));
+*/
+
+/*
+let counter = 0;
+let step = 5;
+  do {
+    console.log(counter);
+    counter+= step;
+  } while (counter <= 100);
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+*/
+
+/*
+let arr = [];
+for (let i = 0; i < 100; i++) {
+  arr.push(i);
+  console.log(arr);
+}
+
+let arr1 = [];
+for (let i = 0; i < 100; i = i + 2) {
+  arr1.push(i);
+  console.log(arr1);
+}
+*/
+
+let myWork = [];
+for (let lesson = 1; lesson <= 10; lesson++) {
+  let tempLesson = {
+    name: `Lesson ${lesson}`,
+    status: lesson % 2 === 0 ? true : false
+  };
+
+  myWork.push(tempLesson);
+}
+console.log(myWork);
