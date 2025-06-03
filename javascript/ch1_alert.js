@@ -1218,6 +1218,8 @@ let counter = 0;
   // Output the final table in the console
   console.table(myTable);
 */
+
+/*
   let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
   for (let i = 0; i < names.length; i ++) {
     if(names[i].startsWith("M")) {
@@ -1270,6 +1272,7 @@ for (let i = 0; i <= totalCells; i++) {
   }
 }
 console.table(gridArray);
+*/
 
 /*
 This the different syntax of loops for review if ever confuse
@@ -1330,5 +1333,259 @@ for (let i = 1; i <= 5; i++) {
   }
   console.log(i);
 }
-
 */
+
+/*
+// for of loop syntax
+let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let name of names) {
+  console.log(name);
+}
+*/
+
+/*
+let arr = [];
+let i = 0;
+  while (i < 10) {
+    arr.push(i);
+    i++;
+  }
+    console.log("Full array:", arr);
+
+  for (let i = 0; i < arr.length; i++) {
+    console.log("For loop index value: ", arr[i]);
+  }
+
+  for (let value of arr){
+    console.log("For-of value: ", value);
+  }
+
+let carBrands = ["Suzuki", "Honda", "Toyota", "Mazda", "Subaru"];
+for (let brand of carBrands) {
+  console.log("Car brand:", brand);
+}
+*/
+
+/*
+// syntax for for in loop
+let car = {
+  model: "Golf",
+  make: "Volkswagen",
+  year: 1999,
+  color: "Black",
+};
+
+for (let prop in car) {
+  console.log(car[prop]);
+}
+*/
+
+/*
+let numbers = [];
+let i = 1;
+  while (i <= 10) {
+  numbers.push(i);
+  i++;
+  }
+  console.log(numbers);
+
+  for (let num of numbers) {
+    if (num % 2 === 0) {
+      console.log(num + " is even");
+    } else {
+      console.log(num + " is odd");
+    }
+  }
+  */
+
+  /*
+  let number = [];
+  let i = 1;
+    while (i <= 50) {
+      number.push(i);
+      i++;
+    }
+      console.log(number);
+  for (let num of number) {
+    if (num % 3 === 0 && num % 5 === 0) {
+      console.log(num + " is a multiple of both 3 and 5")
+    } else if (num % 3 === 0) {
+      console.log(num + " is a multiple of 3");
+    } else if (num % 5 === 0) {
+    console.log(num + " is a multiple of 5");
+    } else {
+      console.log(num + " is not a multiple of both 3 and 5");
+    }
+  }
+  */
+
+  /*
+  let carMaker = {
+    Maker: "Suzuki",
+    Established: 1909,
+    Manufacturing: "Vehicles",
+  };
+
+  for (let prop in carMaker) {
+    console.log(carMaker[prop]);
+  }
+
+  carMaker = ["Suzuki", 1909, "Vehicles"];
+    for (let i = 0; i < carMaker.length; i++) {
+      console.log(carMaker[i]);
+    }
+  */
+
+let car = {
+  model: "Golf",
+  make: "Volkswagen",
+  year: 1999,
+  color: "Black",
+};
+
+let keys = Object.keys(car);
+  for (let i = 0; i < keys.length; i++) {
+      console.log(keys[i]);
+  }
+
+let values = Object.values(car);
+  for (let i = 0; i < values.length; i++) {
+      console.log(values[i]);
+  }
+
+let entries = Object.entries(car);
+  for (let i = 0; i < entries.length; i++) {
+      console.log(`${entries[i][0]}: ${entries[i][1]}`);
+  }
+
+/*
+let arrKeys = Object.keys(car);
+  console.log(arrKeys);
+*/
+
+for (let key of Object.keys(car)) {
+  console.log(key);
+} for (let key of Object.values(car)) {
+  console.log(key);
+}
+
+let arrKeys = Object.keys(car);
+for (let i = 0; i < arrKeys.length; i++) {
+  console.log(arrKeys[i] + ":" + car [arrKeys[i]]);
+}
+
+let arrEntries = Object.entries(car);
+  console.log(arrEntries);
+
+for (const [key, value] of Object.entries(car)) {
+  console.log(key, ":", value);
+}
+
+let cars = [
+  {
+    model: "Golf",
+    make: "Volkswagen",
+    year: 1999,
+    color: "black",
+  },
+  {
+    model: "Picanto",
+    make: "Kia",
+    year: 2020,
+    color: "red",
+  },
+  {
+    model: "Peugot",
+    make: "208",
+    year: 2021,
+    color: "black",
+  },
+  {
+    model: "Fiat",
+    maker: "Punto",
+    year:  2020,
+    color: "black",
+  }
+];
+
+for (let i = 0; i < cars.length; i++) {
+  if (cars[i].year >= 2020) {
+    if (cars[i].color === "black") {
+      console.log("I have found my new car:", cars[i]);
+      break;
+    }
+  }
+}
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+  if (i === 4) {
+    break;
+  }
+}
+let superLongArray = 0;
+
+while (true) {
+  if (superLongArray[0] != 42 && superLongArray.length > 0) {
+    superLongArray.shift();
+  } else {
+    console.log("Not found 42!");
+    break;
+  }
+}
+
+while (superLongArray.length > 0 && notFound) {
+  if (superLongArray[0] != 42) {
+    superLongArray.shift();
+  } else {
+    console.log("Found 42!");
+    notFound = false;
+  }
+}
+
+for (let car of cars) {
+  if (car.color !== "black") {
+    continue;
+  } if (car.year >= 2020) {
+    console.log("We could get this one", car)
+  }
+}
+
+let i = 1;
+while (i < 50) {
+  i++;
+  if ((i - 1) % 2 === 0) {
+    console.log(i-1);
+  }
+}
+
+for (let i = 1; i < 50; i = i + 2) {
+  console.log(i);
+}
+
+let output = "";
+let skipNumber = 4;
+
+for (let i = 1; i <= 10; i++) {
+  if (i === skipNumber) {
+    continue;
+  }
+  output += i;
+} 
+console.log("Using continue", output);
+
+output = ""
+
+for (let i = 1; i <= 10; i++) {
+  if (i === skipNumber){
+    break;
+  }
+  output += i;
+}
+console.log("Using break", output);
+
+
+
+
+
+
