@@ -1167,6 +1167,7 @@ for (let i = 0; i < 100; i = i + 2) {
 }
 */
 
+/*
 let myWork = [];
 for (let lesson = 1; lesson <= 10; lesson++) {
   let tempLesson = {
@@ -1177,3 +1178,157 @@ for (let lesson = 1; lesson <= 10; lesson++) {
   myWork.push(tempLesson);
 }
 console.log(myWork);
+*/
+
+/*
+let arrOfArrays = [];
+for (let i = 0; i < 3; i++){
+  arrOfArrays.push([]);
+   for (let j = 0; j < 7; j++) {
+  arrOfArrays[i].push(j);
+  }
+}
+console.log(arrOfArrays);
+console.table(arrOfArrays);
+*/
+
+/*
+let myTable = []; // 1. Create an empty array
+
+// Set number of rows and columns
+let numRows = 5;
+let numCols = 6;
+
+// Set a counter variable
+let counter = 0;
+
+  // Outer loop for rows
+  for (let row = 0; row < numRows; row++) {
+    // Create a temporary array for the current row
+    let tempTable = [];
+    for (let col = 0; col < numCols; col++) {
+      // Increment counter
+      counter++;
+      // Push the counter value into the tempTable (current row)
+      tempTable.push(counter); // counter value
+    }
+    // Push the row into the final table console
+    myTable.push(tempTable);
+  }
+  // Output the final table in the console
+  console.table(myTable);
+*/
+  let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+  for (let i = 0; i < names.length; i ++) {
+    if(names[i].startsWith("M")) {
+      delete names[i];
+    }
+    names[i] = "hello " + names[i];
+  }
+  console.log(names);
+
+  let peoplesName = ["Chantal", "John", "Maxime"];
+  let data = {
+    Age: [25, 26, 27],
+    Gender: ["Female", "Female", "Male"],
+    Height: ["5'9\"", "5'5\"", "5'10\""],
+    Weight: ["60kl", "55kl", "65kl"]
+  };
+
+  let table = [];
+  let headerRow = ['Name'];
+  headerRow.push(...peoplesName);
+  table.push(headerRow);
+
+  for (let category in data) {
+    let row = [category];
+    row.push(...data[category]);
+    table.push(row);
+  }
+
+  console.table(table);
+
+let gridArray = [];
+let counter = 0;
+let row = [];
+let totalCells = 64;
+let numCols = 8;
+
+for (let i = 0; i <= totalCells; i++) {
+  if (counter % numCols === 0) {
+  if (row.length > 0) {
+    gridArray.push(row);
+  }
+    row = [];
+  }
+  if (i < totalCells) {
+    row.push(counter);
+    counter++;
+  }
+  if (row.length > 0){
+    gridArray.push(row);
+  }
+}
+console.table(gridArray);
+
+/*
+This the different syntax of loops for review if ever confuse
+
+// For loop that counts from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// For loop that loops through an array (not nested)
+let jsLoops = ["for loop", "while loop", "do while loop"];
+for (let i = 0; i < jsLoops.length; i++) {
+  console.log(jsLoops[i]);
+}
+
+// Two separate for loops (not nested)
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+} 
+
+for (let j = 1; j <= 3; j++) {
+  console.log(j);
+}
+
+// nested loops
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+  for (let j = 1; j <= 3; j++) {
+    console.log ("Inner loop " + j)
+  }
+}
+
+// while loop syntax
+let i = 0;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+
+// do while loop
+let k = 1;
+do {
+  console.log(k);
+  k++;
+} while (k <= 5);
+
+// break / continue
+for (let i = 1; i <= 5; i++) {
+  if (i == 3) {
+      break; // Exit the loop completely when i is 3
+  }
+  console.log(i);
+}
+
+for (let i = 1; i <= 5; i++) {
+  if (i == 3) {
+      continue; // Skip this iteration when i is 3
+  }
+  console.log(i);
+}
+
+*/
