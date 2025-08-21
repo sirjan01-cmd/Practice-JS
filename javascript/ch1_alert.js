@@ -296,365 +296,6 @@ console.log(`BMI: ${bmi.toFixed(2)}`);
 */
 
 /*
-Creating an array
-
-let arr = ["Hi there", 5, true];
-console.log(typeof arr[0]);
-console.log(typeof arr[1]);
-console.log(typeof arr[2]);
-
-Improper way of adding values in an array
-cars = ["Toyota", "Renault", "Volkswagen"];
-cars[0] = "Tesla"
-cars[3] = "Kia"
-cars[-1] = "Fiat"
-console.log(cars[0]);
-console.log(cars[3])
-console.log(cars[-1]);
-*/
-
-/*
-colors = ["black", "orange", "pink"];
-booleans = [true, false, false,true];
-emptyArray = [];
-
-console.log("Length of colors:", colors.length);
-console.log("Length of booleans:", booleans.length);
-console.log("Length of empty array:", emptyArray.length);
-
-numbers = [12, 24, 36];
-numbers[5] = 48;
-console.log(numbers.length);
-console.log("numbers", numbers);
-
-improper way of adding elements using new indices
-
-shoppingList = ["Milk", "Bread", "Apples"]
-console.log(shoppingList);
-shoppingList[1] = "Bananas"
-console.log(shoppingList[1]);
-console.log(shoppingList);
-*/
-
-/*
-
-favoriteFruits = ["grapefruit", "orange", "lemon"];
-favoriteFruits.push("tangerine");
-let lengthofFavoriteFruits = favoriteFruits.push("lime")
-console.log(favoriteFruits);
-
-let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
-arrOfShapes.splice(2, 0, "square", "trapezoid");
-console.log(arrOfShapes);
-
-arrOfShapes.splice(2, 12, "square", "trapezoid");
-console.log(arrOfShapes);
-
-let arr5 = [1, 2, 3];
-let arr6 = [4, 5, 6];
-let arr7 = arr5.concat(arr6);
-console.log(arr7);
-
-let arr8 = arr7.concat(7, 8, 9);
-console.log(arr8);
-
-arr8.pop();
-arr8.shift();
-arr8.splice(1, 3);
-delete arr8[0];
-
-arr8 = [2, 6, 7, 8];
-let findValue = arr8.find(function(e) {
-  return e === 6});
-let findValue2 = arr8.find(e => e === 10);
-  console.log(findValue, findValue2);
-
-  arr8 = [2, 6, 7, 8];
-    let findIndex = arr8.indexOf(6);
-    let findIndex2 = arr8.indexOf(10);
-    console.log(findIndex, findIndex2);
-
-let animals = ["dog", "horse", "cat", "platypus", "dog"];
-let lastDog = animals.lastIndexOf("dog");
-
-let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
-  names.sort();
-  console.log(names);
-  names.reverse();
-  console.log(names);
-
-let ages = [18, 72, 33, 56, 40];
-  ages.sort();
-  console.log(ages);
-  ages.reverse();
-  console.log(ages);
-  */
-  
-  /*
-  shoppingList = ["Milk", "Bread", "Apples"];
-    console.log(shoppingList);
-  shoppingList.push("Bananas");
-   let lengthOfShoppingList = shoppingList.push("Eggs");
-   console.log(shoppingList);
-  shoppingList.splice(1, 1)
-    console.log(shoppingList);
-  shoppingList.sort();
-    console.log(shoppingList);
-   let findIndex = shoppingList.indexOf("eggs");
-    console.log(findIndex);
-
- shoppingList.splice(2, 0, "Carrots", "Lettuce");
-  console.log(shoppingList);
-  lengthOfShoppingList = shoppingList.push("Juice", "Pop")
-  console.log(shoppingList);
-  */
-
-/*
-let someValues1 = [1, 2, 3];
-let someValues2 = [4, 5, 6];
-let someValues3 = [7, 8, 9];
-
-let arrOfArrays = [someValues1, someValues2, someValues3]
-let arrOfArrays2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-console.log(arrOfArrays);
-console.log(arrOfArrays2);
-
-let value1 = arrOfArrays[0][1];
-
-let someValues4 = [1, 2, 3];
-let arrOfArrays4 = [[1, 2, 3], [1, 2, 3], [1, 2, 3]];
-
-let value2 = arrOfArrays4 [1][1];
-  console.log(value2);
-*/
-
-/*
-let arr = [0, 1, 2]
-  console.log(typeof arr);
-
-let dog = {
-  dogName: "Javascript",
-  weight: 2.4,
-  color: "brown",
-  breed: "chihuahua",
-  age: 3,
-  burglarBiter: true
-};
-
-let dogColor1 = dog["color"];
-let dogColor2 = dog.color;
-
-dog["color"] = "blue";
-dog.weight = 2.3;
-
-console.log(dog);
-
-let variable = "age";
-console.log(dog[variable]);
-
-variable = "breed";
-console.log(dog[variable]);
-
-dog[variable] = "dachshund"
-console.log(dog["breed"]);
-*/
-
-/*
-let myCar = {
-  Maker: "Suzuki",
-  Model: "Suzuki Swift",
-  Color: "Metallic Gray",
-  Year: 2021,
-  Engine: 1.2,
-  headTurner: true
-};
-
-myCar["Color"] = "white";
-console.log(myCar["Color"]);
-
-myCar["Price"] = 500000;
-myCar["For sale"] = "This car is for sale"
-console.log(myCar["Price"]);
-console.log(myCar["For sale"]);
-console.log(myCar["Maker"]);
-console.log(myCar["Model"]);
-console.log(myCar);
-*/
-
-/*
-let company = {
-  companyName: "Healthy Candy",
-  activity: "Food manufacturing",
-  address: {
-    street: "2nd street",
-    number: "123",
-    zipcode: "33116",
-    city: "Miami",
-    state: "Florida"
-  },
-  yearOfEstablisment: 2021
-};
-
-company.address.zipcode = "33117";
-company["address"]["number"] = "100";
-
-company = {
-  companyName: "Healthy Candy",
-  activities: ["food manufacturing", "improving kids' health", 
-    "manufacturing toys"],
-  address: {
-    street: "2nd street",
-    number: "123",
-    zipcode: "33116",
-    city: "Miami",
-    state: "Florida"
-  },
-  yearOfEstablisment: 2021
-};
-
-let activity = company.activities[1];
-
-let addresses = [{
-  street: "2nd street",
-  number: "123",
-  zipcode: "33116",
-  city: "Miami",
-  state: "Florida"
-},
-{
-  street: "1st West avenue",
-  number: "5",
-  zipcode: "75001",
-  city: "Addison",
-  state: "Texas"
-}];
-
-// let streetName = addresses[0].street;
-
-company = {
-  companyName: "Healthy Candy",
-  activities: ["food manufacturing", "improving kids' health",
-  "manufacturing toys"],
-  addresses: [{
-  street: "2nd street",
-  number: "123",
-  zipcode: "33116",
-  city: "Miami",
-  state: "Florida"
-},
-{
-  street: "1st West avenue",
-  number: "5",
-  zipcode: "75001",
-  city: "Addison",
-  state: "Texas"
-}],
-  yearOfEstablisment: 2021
-};
-
-let streetName = addresses[0].street;
-
-console.log(company);
-*/
-
-/*
-let people = {
-  friends: []
-};
-
-let friend1 = {
-  name: "Arvin",
-  lastName: "Ilustrisimo",
-  idValue: "Loyal"
-};
-
-let friend2 = {
-  name: "Kenneth",
-  lastName: "Jalao",
-  idValue: "Loyal"
-};
-
-let friend3 = {
-  name: "Kyle",
-  lastName: "Galvez",
-  idValue: "Loyal"
-};
-
-arrOfFriends = [friend1, friend2, friend3];
-console.log(arrOfFriends);
-
-arrOfFriends.push(
- {
-    name: "Jay Ar",
-    lastName: "Unknown",
-    idValue: "Loyal"
-  },
-  {
-    name: "Jerome",
-    lastName: "Tuclaud",
-    idValue: "Loyal"
-  }
-);
-
-people.friends = arrOfFriends;
-
-console.log(arrOfFriends);
-console.log(people);
-*/
-
-/*
-const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
-  {test: 'one', score: 55}, ['one','two']];
-  console.log(theList);
-  theList.shift();
-  theList.pop();
-  console.log(theList);
-  theList.splice(0, 0, "FIRST");
-  console.log(theList);
-  theList.splice(4, 5, "Hello World");
-  console.log(theList);
-  theList.splice(2, 2, "MIDDLE");
-  console.log(theList);
-  theList.push("LAST");
-  console.log(theList);
-*/
-
-/*
-let storeItems = ["Shampoo", "Soap", "Conditioner"];
- let storeItem1 = {
-  name: "Shampoo",
-  brand: "Dove",
-  cost: "$5"
- };
-
- let storeItem2 = {
-  name: "Soap",
-  brand: "Safeguard",
-  cost: "$2"
- };
-
- let storeItem3 = {
-  name: "Conditioner",
-  brand: "Dove",
-  cost: "$4"
- };
-
- console.log(storeItem1, storeItem2, storeItem3);
-
- storeItems = [storeItem1, storeItem2, storeItem3];
-
- console.log(storeItems);
-
- let item3 = storeItems[2];
-
- console.log(item3);
-
- storeItem1["brand"] = "Clear";
-
- console.log(storeItem1);
-*/
-
-/*
 let rain = true;
   if(rain){
     console.log("** Taking my umbrella when I need to go outside **");
@@ -1435,7 +1076,7 @@ let i = 1;
       console.log(carMaker[i]);
     }
   */
-
+/*
 let car = {
   model: "Golf",
   make: "Volkswagen",
@@ -1457,12 +1098,14 @@ let entries = Object.entries(car);
   for (let i = 0; i < entries.length; i++) {
       console.log(`${entries[i][0]}: ${entries[i][1]}`);
   }
+*/
 
 /*
 let arrKeys = Object.keys(car);
   console.log(arrKeys);
 */
 
+/*
 for (let key of Object.keys(car)) {
   console.log(key);
 } for (let key of Object.values(car)) {
@@ -1516,7 +1159,9 @@ for (let i = 0; i < cars.length; i++) {
     }
   }
 }
+*/
 
+/*
 for (let i = 0; i < 10; i++) {
   console.log(i);
   if (i === 4) {
@@ -1542,6 +1187,9 @@ while (superLongArray.length > 0 && notFound) {
     notFound = false;
   }
 }
+  */
+
+/*
 
 for (let car of cars) {
   if (car.color !== "black") {
@@ -1550,7 +1198,9 @@ for (let car of cars) {
     console.log("We could get this one", car)
   }
 }
+*/
 
+/*
 let i = 1;
 while (i < 50) {
   i++;
@@ -1583,9 +1233,398 @@ for (let i = 1; i <= 10; i++) {
   output += i;
 }
 console.log("Using break", output);
+*/
+
+/*
+let groups = [
+  ["Martin", "Daniel","Keith"],
+  ["Margot", "Marina", "Ali"],
+  ["Helen", "Jonah", "Sambikos"],
+];
+
+for (let i = 0; i < groups.length; i++) {
+  let matches = 0;
+
+for (let j = 0; j < groups[i].length; j++) {
+    if(groups[i][j].startsWith("M")) {
+      matches++;
+    } else {
+      continue;
+    }
+    if (matches === 2) {
+      console.log("Found a group with two names starting with an M");
+      console.log(groups[i]);
+      break;
+    }
+  }
+}
+
+for (let group of groups) {
+  for (let member of group) {
+    if (member.startsWith("M")) {
+      console.log("Found one starting with M", member);
+      break;
+    }
+  }
+}
+
+outer:
+for (let group of groups) {
+  inner:
+  for (let member of group) {
+    if (member.startsWith("M")) {
+      console.log("found one starting with M: ", member);
+      break outer;
+    }
+  }
+}
+  */
+
+/*
+let multiplicationTable = [];
+let size = 10;
+
+for (let row = 1; row <= size; row++) {
+  let tempRow = [];
+  for (let col = 1; col <= size; col++) {
+    tempRow.push(row * col);
+  }
+  multiplicationTable.push(tempRow)
+}
+
+console.log(multiplicationTable);
+*/
+
+/*
+let board = [];
+let size = 8;
+
+ for (let row = 1; row <= size; row++) {
+  let tempRow = [];
+  for (col = 1; col <= size; col++) {
+    if ((row + col) % 2 === 0) {
+      tempRow.push("white");
+    } else {
+      tempRow.push("black");
+    }
+  }
+  board.push(tempRow);
+ }
+
+ console.log(board);
+*/
+
+/*
+let size = 5;
+let table = [];
+
+for (let row = 1; row <= size; row++) {
+  let tempRow = [];
+  for (let col = 1; col <= size; col++) {
+    tempRow.push(row * col);
+  }
+  table.push(tempRow);
+}
+
+console.log(table);
+*/
+
+/*
+const myArray = [1, 5, 7];
+for (el in myArray) {
+  console.log(Number(el));
+  el = Number(el) + 5;
+  console.log(el);
+}
+console.log(myArray);
+
+let multiplicationTable = [];
+let size = 10;
+
+ function isPrime(num) {
+      if (num < 2) return false;
+      for (let i = 2; i <= Math.sqrt(num); i++){
+        if (num % i === 0) return false;
+      }
+       return true;
+    } 
+    
+    for (let row = 1; row <= size; row++) {
+  let tempRow = [];
+  for (let col = 1; col <= size; col++) {
+    let result = row * col;
+    if (isPrime(result)) {
+      tempRow.push(`${result}*`);
+    } else {
+      tempRow.push(result);
+    }
+  }
+  multiplicationTable.push(tempRow)
+}
+
+console.log(multiplicationTable);
+*/
+
+/*
+function sayHello() {
+  let you = prompt("What's your name?");
+  console.log("Hello " + you + "!");
+}
+
+sayHello();
+*/
+
+let varContainingFunction = function() {
+    let varInfunction = "I'm in a function"
+    console.log("hi there", varInfunction);
+};
+
+varContainingFunction();
+
+/*
+function askUser(nationality, country) {
+  console.log("Hello I'm a " + nationality);
+  console.log("I'm from the " + country);
+};
 
 
+askUser("Filipino", "Philippines");
+*/
+
+/*
+let askUser = function() {
+  let userNationality = "I'm a Filipino, "
+  let userCountry = "I live in the Philippines"
+  console.log("Hi there " + userNationality + userCountry);
+};
+
+askUser();
+*/
+
+/*
+// 1. Create a function with two parameters and return their sum
+function addNumbers(num1, num2) {
+  return num1 + num2;
+}
+
+// 2. Set up two variables
+let a = 5;
+let b = 7;
+
+// 3. Use the function on the two variables and output the result
+console.log("First result:", addNumbers(a, b));
+
+// 4. Call the function again with two more numbers
+console.log("Second result:", addNumbers(10, 15));
+*/
+
+/*
+function multiplyNumbers(numA, numB) {
+  return numA * numB;
+}
+
+let a = 10;
+let b = 5;
+
+console.log("Result 1", multiplyNumbers(a, b));
+console.log("Result 2", multiplyNumbers(5, 5));
+
+function calculateTotalPrice(price = 25, taxRate = 0.1) {
+  return price + (price * taxRate);
+}
+
+let price = 15;
+let tax = 0.1;
+  console.log("Total price: ", calculateTotalPrice(price, tax));
+  console.log("Total price: ", calculateTotalPrice(25, 0.1));
+
+let array = ["Thoughtful", "Kind", "Lovable"];
+function sayHi() {
+  let computerAsk = prompt("What's your name");
+  let array1 = Math.floor(Math.random() * array.length);
+  let randomValue = array[array1];
+  console.log("Hi " + computerAsk + " you are " + randomValue);
+}
+
+sayHi();
+*/
+
+/*
+function tester(para1, para2) {
+  return para1 + " " + para2;
+}
+
+const arg1 = "argument 1";
+const arg2 = "argument 2"
+tester(arg1, arg2);
+
+function myFunc(param1, param2) {
+}
+
+function addTwoNumbers(x, y) {
+  console.log(x + y);
+}
+
+myFunc("arg1", "arg2");
+
+console.log("this is an argument");
+prompt("argument here too");
+
+let arr = [];
+arr.push("argument")
+
+addTwoNumbers(3, 4);
+addTwoNumbers(12, -90);
+*/
+/*
+let num1 = 10;
+let num2 = 15;
+let operator = "add"
+
+function calcNumber(num1, num2, operator) {
+  if (operator === "add") {
+      return num1 + num2;
+  } else if (operator === "subtract") {
+      return num1 - num2; 
+  } else {
+    return num1 + num2;
+  }
+}
+ console.log("Result is ", calcNumber(num1, num2, operator));
+
+ operator = "subtract";
+ console.log("Result is ", calcNumber(num1, num2, operator));
+*/
+
+let num1 = 5;
+let num2 = 10;
+let operator = "add";
 
 
+function calcNumbers(num1, num2, operator = "add") {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    return "Invalid number";
+  } if (num2 === 0) {
+    return "Cannot divide to zero"
+  }
+   let result;
+  switch(operator) {
+    case "add":
+      result = num1 + num2;
+      break;
+    case "subtract":
+      result = num1 - num2;
+      break;
+    case "multiply":
+      result = num1 * num2;
+      break;
+    case "division":
+      result = num1 / num2;
+      break;
+    default:
+      result = num1 + num2;
+  }
+  if (result >= 100) {
+    return "Result is too big"
+  } else {
+    return result;
+  }
+}
 
+console.log("This is the result: ", calcNumbers(50, 5, "add"));
+console.log("This is the result: ", calcNumbers(10, 5, "subtract"));
+console.log("This is the result: ", calcNumbers(40, 2, "multiply"));
+console.log("This is the result: ", calcNumbers(40, 2, "division"));
+console.log("This is the result: ", calcNumbers(40, "Ten", "add"));
+console.log("This is the result: ", calcNumbers(40, 0, "division"));
+console.log("This is the result: ", calcNumbers(40, 5, "multiply"));
 
+function doingStuff(x) {
+  console.log(x);
+}
+
+/*
+let doingArrowStuff = x => console.log(x)
+
+doingArrowStuff("Great!");
+
+let addTwoNumbers = (x, y) => console.log(x, y);
+
+addTwoNumbers(15, 25);
+*/
+
+/*
+const arr = ["squirrel", "alpaca", "buddy"];
+arr.forEach(e => console.log(e));
+
+let spread = ["so", "much", "fun"];
+let message = ["Javascript", "is", ...spread, "and", "very", "powerful"];
+console.log(message);
+
+function addTwoNumbers(x, y) {
+  return x + y;
+}
+
+let result1 = addTwoNumbers(4, 5);
+console.log(result1);
+*/
+
+/*
+function addFourNumbers(w, x, y, z) {
+  console.log(w + x + y + z);
+}
+
+let arr2 = [5, 9];
+let arr3 = [6, 7];
+addFourNumbers(...arr2, ...arr3)
+
+//function someFunction(param1, param2) {
+function someFunction(param1, ...param2) {
+  console.log(param1, param2);
+}
+*/
+
+/*
+let favoriteSubject = prompt("What is your favorite subject?");
+let result = addTwoNumbers(4, 5);
+console.log(result);
+*/
+
+/*
+let resultsArr = [];
+for (let i = 0; i < 10; i ++) {
+  let result1 = addTwoNumbers(i, 2*i);
+  resultsArr.push(result1);
+}
+
+console.log(resultsArr);
+*/
+/*
+function guessLuckyNumber() {
+  return Math.floor(Math.random() * 10) + 1;
+}
+
+let i = 1;
+const lucky = guessLuckyNumber();
+
+while (i <= 10) {
+  let pickNumber = parseInt(prompt("Enter a number between 0 and 10:"));
+  
+  if (pickNumber === lucky) {
+    console.log("Congratulations! You guessed the lucky number.");
+    break;
+  } else {
+    console.log("Wrong guess. Try again.");
+  }
+
+  i++;
+}
+
+if (i > 10) {
+  console.log("Sorry, you've used all your guesses. The lucky number was: " + lucky);
+}
+*/
+
+let addTwoNumbers = (x, y) => x + y;
+let result = addTwoNumbers(12, 15);
+console.log(result);
