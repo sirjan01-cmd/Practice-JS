@@ -262,6 +262,7 @@ switch (random) {
 };
 */
 
+/*
 let i = 0;
 while (i <= 5) {
   console.log("This is iteration number " + i);
@@ -281,7 +282,9 @@ while (notFound && someArray.length > 0) {
     console.log("Not Jessica, checking next name...");
   }
 }
+*/
 
+/*
 let nr1 = 0;
 let nr2 = 1;
 let temp;
@@ -296,7 +299,9 @@ while (fibonacciArray.length < 25) {
 }
 
 console.log(fibonacciArray);
+*/
 
+/*
 let guessedNumber = 10;
 let randomNumber1 = Math.floor(Math.random() * 11);
 let isCorrect = false;
@@ -313,5 +318,62 @@ while (!isCorrect) {
     guessedNumber = parseInt(prompt("Enter a new guess:"), 10);
   }
 }
+*/
 
-// page 91
+/*
+let shoppingCart = [];
+let shopping = true;
+
+while (shopping) {
+  let action = prompt("What would you like to do? add to cart, view cart, remove item, or checkout").toLowerCase();
+
+  if (action === "add to cart") {
+    let item = prompt("Select an item: food and drinks, clothes, electronics, or books").toLowerCase(); 
+
+    switch (item) {
+      case "food and drinks":
+      case "clothes":
+      case "electronics":
+      case "books":
+        shoppingCart.push(item);
+        console.log(item + " added to your cart.");
+        break;
+      default:
+        console.log("Item not recognized. Please try again.");
+    }
+
+  } else if (action === "view cart") {
+    if (shoppingCart.length === 0) {
+      console.log("Your cart is empty.");
+    } else {
+      console.log("Items in your cart:");
+      for (let i = 0; i < shoppingCart.length; i++) {
+        console.log("- " + shoppingCart[i]);
+      }
+    }
+
+  } else if (action === "remove item") {
+    let itemToRemove = prompt("Enter the name of the item to remove:").toLowerCase();
+    let index = shoppingCart.indexOf(itemToRemove);
+
+    if (index !== -1) {
+      shoppingCart.splice(index, 1);
+      console.log(itemToRemove + " removed from your cart.");
+    } else {
+      console.log("Item not found in cart.");
+    }
+  } else if (action === "checkout") {
+    if (shoppingCart.length === 0) {
+      console.log("Your cart is empty.");
+    } else {
+      console.log("Proceeding to checkout with the following items:");
+      for (let i = 0; i < shoppingCart.length; i++) {
+        console.log("- " + shoppingCart[i]);
+      }
+    }
+  }  let continueShopping = prompt("Do you want to continue shopping? (yes/no)").toLowerCase();
+  if (continueShopping !== "yes") {
+    shopping = false;
+  }
+}
+*/

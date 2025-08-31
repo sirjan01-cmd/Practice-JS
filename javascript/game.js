@@ -1,11 +1,8 @@
-// In the browser console, in Node.js we use the readline module to get user input.
-//
-// Here’s your number guessing game rewritten for Node.js:
 
-const readline = require("readline");
+import { createInterface } from "readline";
 
 // Create readline interface
-const rl = readline.createInterface({
+const rl = createInterface({
   input: process.stdin,
   output: process.stdout
 });
@@ -32,3 +29,4 @@ function askGuess() {
 }
 
 askGuess();
+
