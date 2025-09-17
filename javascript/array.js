@@ -515,6 +515,7 @@ faveFruits3.reverse();
 console.log(faveFruits3);
 */
 
+/*
 let faveFruits = ["apple", "banana", "orange"];
 let faveFruits1 = ["kiwi", "mango", "grape", "pear"];
 let faveFruits2 = ["peach", "plum", "watermelon"];
@@ -535,6 +536,8 @@ console.log(faveMovies[0][1]);
 console.log(faveMovies);
 let flatfaveMovies = faveMovies.flat();
 console.log(flatfaveMovies);
+*/
+
 /*
 const constant = ["can change values"];
 constant[0] = "can't change the array itself";
@@ -545,6 +548,7 @@ constant = ["This will cause an error"];
 console.log(constant);
 */
 
+/*
 let person = {
   name: "Janine Vizcarra",
   age: 30,
@@ -579,7 +583,9 @@ console.log(person[variable]);
 person[variable] = 75;
 console.log(person[variable]);
 console.log(person);
+*/
 
+/*
 let people = {
   friends: [
     {
@@ -640,6 +646,8 @@ const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
   console.log(storeItems);
   let item3 = storeItems[2];
   console.log(item3);
+  */
+ 
 /*
   let weather = prompt("Enter the weather condition (sunny, rainy, cloudy):", "");
   weather = weather.toLowerCase();

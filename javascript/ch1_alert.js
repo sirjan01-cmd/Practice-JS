@@ -1374,12 +1374,14 @@ function sayHello() {
 sayHello();
 */
 
+/*
 let varContainingFunction = function() {
     let varInfunction = "I'm in a function"
     console.log("hi there", varInfunction);
 };
 
 varContainingFunction();
+*/
 
 /*
 function askUser(nationality, country) {
@@ -1496,6 +1498,7 @@ function calcNumber(num1, num2, operator) {
  console.log("Result is ", calcNumber(num1, num2, operator));
 */
 
+/*
 let num1 = 5;
 let num2 = 10;
 let operator = "add";
@@ -1542,6 +1545,7 @@ console.log("This is the result: ", calcNumbers(40, 5, "multiply"));
 function doingStuff(x) {
   console.log(x);
 }
+*/
 
 /*
 let doingArrowStuff = x => console.log(x)
@@ -1624,7 +1628,8 @@ if (i > 10) {
   console.log("Sorry, you've used all your guesses. The lucky number was: " + lucky);
 }
 */
-
+/*
 let addTwoNumbers = (x, y) => x + y;
 let result = addTwoNumbers(12, 15);
 console.log(result);
+*/
