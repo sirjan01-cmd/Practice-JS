@@ -47,5 +47,11 @@ console.log("Encoded:", encoded_uri);
 let decoded_uri = decodeURI(encoded_uri);
 console.log("Decoded:", decoded_uri);
 
+let arr = ["grapefruit", 4, "hello", 5.6, true];
+
+function printStuff(element, index) {
+  console.log("Printing stuff:", element, "on array position", index);
+}
+arr.forEach(printStuff);
 
 // Page 167
