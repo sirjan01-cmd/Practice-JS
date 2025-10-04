@@ -340,7 +340,7 @@ console.log(numbers(5, 10));
   console.log("insert number:", num);
 })(3);
 */
-
+/*
 function greeting(name = "User") {
   let inputName = prompt("Enter your name")
   console.log("Hello, " + (inputName || name) + "!");
@@ -362,5 +362,123 @@ let enteredItem = prompt("Enter item details (format: name, quantity: x, price: 
 }
 addToCartItem();
 
+function calculateTotalPrice(cart) {
+  let total = 0;
 
-// continue to page 148
+  for (let item of cart) {
+    let itemDetails = item.split(",");
+    console.log("Item details:", itemDetails);
+
+    if (itemDetails.length >= 3) {
+      let pricePart = itemDetails[2].split(":")[1];
+      let price = parseFloat(pricePart.replace("$", ""));
+      let quantity = parseInt(itemDetails[1].split(": ")[1]);
+      total += price * quantity;
+    } else {
+      console.log("Total price:", total);
+      return total;
+    }
+  }
+}
+*/
+
+/*
+let enterName = prompt("Enter your name:");
+console.log("Hello, " + (enterName || "User") + "!");
+
+let yearsBeforeTurning65 = (age) => 65 - age;
+
+let enteredAge = parseInt(prompt("Enter your age:"));
+console.log("Years before turning 65:", yearsBeforeTurning65(enteredAge));
+
+if (isNaN(enteredAge) || enteredAge < 0) {
+  console.log("Please enter a valid age.");
+} else  if (enteredAge < 18) {
+  console.log("You are a minor.");
+} else if (enteredAge >= 18 && enteredAge < 60) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a senior citizen.");
+}
+
+let arrOfFaveFoods = ["pizza", "sushi", "chocolate", "pasta", "ice cream"];
+let promptFood = prompt("Enter your favorite food:");
+let found = false;
+
+for (let food of arrOfFaveFoods) {
+  if (promptFood === food) {
+    console.log("Great choice! " + promptFood + " is one of my favorites too!");
+    found = true;
+    break;
+  }
+}
+
+if (!found) {
+  console.log("Interesting choice! I haven't tried " + promptFood + " before.");
+}
+
+let userProfile = {
+  name: "Alice",
+  age: 30,
+  favoriteHobbies: ["reading", "traveling", "coding"],
+  isStudent: false
+}
+
+console.log(userProfile.name);
+console.log(userProfile.age);
+console.log(userProfile.favoriteHobbies);
+console.log(userProfile.isStudent);
+
+function greetUser(name = "User") {
+  let enteredName = prompt("Enter your name:");
+  console.log("Hello, " + (enteredName || name) + "!");
+}
+
+greetUser();
+
+function addNumbers(a, b) {
+  return a + b;
+}
+
+let num1 = parseFloat(prompt("Enter first number:"));
+let num2 = parseFloat(prompt("Enter second number:"));
+console.log("The sum is: " + addNumbers(num1, num2));
+addNumbers(num1, num2);
+
+let cartList = [
+  {item: "laptop", quantity: 2, price: 10},
+  {item: "phone", quantity: 1, price: 20},
+  {item: "tablet", quantity: 3, price: 5},
+  {item: "headphones", quantity: 2, price: 15},
+  {item: "charger", quantity: 1, price: 30},
+  {item: "mouse", quantity: 4, price: 8}
+];
+
+function calculateTotal(cartList) {
+  let total = 0;
+  for (let product of cartList) {
+    total += product.price * product.quantity;
+  }
+  return total;
+}
+
+let totalPrice = calculateTotal(cartList);
+console.log("Total price of items in cart: $" + totalPrice);  
+if (totalPrice >= 100) {
+  console.log("You qualify for free shipping!");
+} else {
+  console.log("Add more items to your cart to qualify for free shipping.");
+}
+calculateTotal(cartList);
+
+function applyDiscount(total, callback) {
+  let discounted = callback(total);
+  console.log("Total after discount: $" + discounted);
+  return discounted;
+}
+
+applyDiscount(totalPrice, (t) => t * 0.9); // 10% discount
+
+*/
+
+// continue to page 150
